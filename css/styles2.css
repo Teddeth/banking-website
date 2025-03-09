@@ -24,11 +24,15 @@ body {
 
 /* Background colors */
 .red {
-    background: linear-gradient(to right, #b71c1c, #ff8a80);
+    background: linear-gradient(to right, #4caf50, #a5d6a7); /* Green and white gradient */
 }
 
 .black {
-    background: linear-gradient(to right, #0d0d0d, #2c2c2c, #4f4f4f);
+    background: linear-gradient(to right, #ffffff, #f0f0f0, #e0e0e0); /* White gradient */
+}
+
+.black p {
+    color: #121212 !important;
 }
 
 /* Label text */
@@ -177,7 +181,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 600px;
-    background: linear-gradient(to right, #b71c1c, #ff8a80); /* Gradient red background */
+    background: linear-gradient(to right, #4caf50, #a5d6a7); /* Green and white gradient */
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -205,8 +209,8 @@ body {
 .profile button {
     width: 100%;
     padding: 10px;
-    background-color: #292929;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
@@ -216,7 +220,8 @@ body {
 }
 
 .profile button:hover {
-    background-color: #1f1f1f;
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
 .profile button:active {
