@@ -1,0 +1,307 @@
+/* General styles */
+body {
+    background-color: whitesmoke;
+}
+
+.account-container {
+    width: 600px;
+    padding-top: 20px;
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Background colors */
+.red {
+    background: linear-gradient(to right, #b71c1c, #ff8a80);
+}
+
+.black {
+    background: linear-gradient(to right, #0d0d0d, #2c2c2c, #4f4f4f);
+}
+
+/* Label text */
+.label {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* Value text */
+.value {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Icons */
+.icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.icon img:hover {
+    cursor: pointer;
+}
+
+.icon img:active {
+    transform: scale(0.9);
+}
+
+.icon img:focus {
+    outline: none;
+}
+
+.icon img:active {
+    transform: scale(0.9);
+}
+
+.icon {
+    padding: 15px;
+}
+
+.value {
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.text-TD {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ov-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2c2c2c;
+}
+
+.national p {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 15%;
+}
+
+.national p:hover {
+    cursor: pointer;
+}
+
+.national p:active {
+    transform: scale(0.9);
+}
+
+/* Flexbox container for alignment */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    padding: 10px;
+    max-width: 610px; /* Adjust width as needed */
+}
+
+/* Each box styling */
+.info-box {
+    flex: 1;
+    text-align: center;
+    background: linear-gradient(to bottom, #292929, #424242);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Label styling */
+.nat-text {
+    display: block;
+    font-size: 14px;
+    color: #b0b0b0; /* Light gray for contrast */
+    margin-bottom: 5px;
+}
+
+/* Value styling */
+.count {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* White text for clarity */
+}
+
+/* Hover effect */
+.info-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Active effect */
+.info-box:active {
+    transform: scale(0.95);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px;
+    background: linear-gradient(to right, #b71c1c, #ff8a80); /* Gradient red background */
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.profile p {
+    color: white;
+    font-weight: 400;
+}
+
+.profile h5 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.profile button {
+    width: 100%;
+    padding: 10px;
+    background-color: #292929;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profile button:hover {
+    background-color: #1f1f1f;
+}
+
+.profile button:active {
+    transform: scale(0.9);
+}
+
+.profile button:focus {
+    outline: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .account-container, .profile {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .label {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .value {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .ov-text {
+        width: 90%;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-container, .profile {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+
+    .ov-text {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+}
+
+
+
+
